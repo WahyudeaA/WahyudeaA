@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blooms Garden</title>
+
+    <link rel="shortcut icon" href="asset/img/0.ico">
+
+    <!--Bootstrap CSS CDR-->
+    <link rel="stylesheet" href="asset/css/bootstrap.css">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!-- Ling JQueri -->
+    <link rel="stylesheet" type="text/css" href="asset/css/jquery-ui.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	  <script type="text/javascript" src="asset/js/jquery-ui.js"></script>
+      <script type="text/javascript">
+        $(function(){
+          $("#dialogku").dialog({
+            autoOpen:false,
+            show:'blind',
+            hide:'explode'
+          });
+          $('#dibuka').click(function(){
+            $('#dialogku').dialog('open');
+          });
+
+          $( "#Gesergambar" ).sortable();
+          $( "#Gesergambar" ).disableSelection();
+          $( "#Gesergambar1" ).sortable();
+          $( "#Gesergambar1" ).disableSelection();
+        });
+      </script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <!--Navbar-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+              <div class="container py-2">
+                <a class="navbar-brand" href="#">
+                        <img src="asset/img/1.png" alt="" width="35" height="29" class="d-inline-block align-text-top">
+                        <span class="navbar-brand mb-0 h1">Blooms Garden</span>
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="objekwisata.html">Objek Wisata</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="saranaakomodasi.html">Sarana Akomodasi</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="wawasan.html">Wawasan</a>
+                      </li>
+                      <form class="d-flex">
+                        <input class="form-control me-3" type="search" placeholder="Pencarian" aria-label="Search">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                         Cari</button>
+                         <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Selamat datang di Webset kami</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  mohon maaf Kami tidak menemukan apa yang ada cari silakan ulang kembali
+                                  Terima Kasih 
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </form>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+            </header>
+        <!--End Navbar-->
+       <!--Carausel-->
+       <section>
+       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="asset/img/2.jpg" class="gambar" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-4">Restoran Blooms Garden</h1>
+              <h6>Restoran ini berada di dalam Blooms Garden, restoran ini menjual beberapa jenis makanan yang enak untuk dinikmati oleh
+                  raea pengunjung.</h6>
+                  <button type="button" class="btn btn-success btn-lg">Jelajah</button>
+                  <button type="button" class="btn btn-warning btn-lg" id="dibuka">Video</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="asset/img/2,1.jpg" class="gambar" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-4">Taman Bunga</h1>
+              <h6>Taman bunga ini merupakan daya tarik utama dari pada Blooms Garden itu sendiri, 
+                  yang dimana sebagian besar Blooms Garden bersisi berbagai tanaman bunga dan tanaman ias.</h6>
+                  <button type="button" class="btn btn-success btn-lg">Jelajah</button>
+                  <button type="button" class="btn btn-warning btn-lg" id="dibuka">Video</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="asset/img/2,2.jpg" class="gambar" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-4">Patung Dewi Sarahsuati</h1>
+              <h6>Patung ini terletak di bagian tengah dari pada taman Blooms Garden itu sendiri, selain itu juga di bawah 
+                  patuang ada air yang mengalir turu, dan itu semua membuat tampilan dari taman Blooms Garden ini menjadi lebih menarik lagi.</h6>
+                  <button type="button" class="btn btn-success btn-lg">Jelajah</button>
+                  <button type="button" class="btn btn-warning btn-lg" id="dibuka">Video</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </section>
+      <div id="dialogku">
+        <h3>Video Blooms Garden</h3>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/EkpmFHIn7yo" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+      </div>
+    <!--End Carausel-->
+    <!--Objek wisata-->
+    <div class="container-fluid" style="background-color: #f3f4f5;">
+      <hr>
+    <h3 align="center" id="objekwisata" class="display-4" style="text-align: center;">Objek Wisata</h3>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="about-text">
+            <h4>Keindahan Taman Blooms Garden</h4>
+            <p class="lead">Pada blooms garden hamper semuanya berisikan taman tanaman yang indah karena di sana hanya memfokuskan daya Tarik utamanya kepada keindahan 
+              taman nya saja, yang cocok dengan pemandangan alam di sekitar nya, disana 
+              juga ada banyak tanaman bunga dan beberapa tanaman ias yang membuat 
+              blooms garden menjadi tempat yang indah dan pilihan yang bagus untuk 
+              dikunjungi.</p>
+              <p>Pada blooms garden hamper semuanya berisikan taman tanaman yang indah karena di sana hanya memfokuskan daya Tarik utamanya kepada keindahan 
+                taman nya saja, yang cocok dengan pemandangan alam di sekitar nya, disana 
+                juga ada banyak tanaman bunga dan beberapa tanaman ias yang membuat 
+                blooms garden menjadi tempat yang indah dan pilihan yang bagus untuk 
+                dikunjungi.</p>
+                <a class="btn btn-outline-primary" href="#">Selengkapnya</a>
+                <h5>Follow Me no teh website</h5>
+                <a href="" class="btn btn-outline-primary"><img src="asset/img/facebook.svg" width="20px" height="20px"> Facebook</a>
+              <a href="" class="btn btn-outline-info"><img src="asset/img/twitter.svg" width="20px" height="20px"> Twitter</a>
+              <a href="" class="btn btn-outline-danger"> <img src="asset/img/youtube.svg" width="20px" height="20px">Youtube</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <figure class="figure">
+            <img src="asset/img/6.jpg" class="figure-img img-fluid rounded" alt="..." width="600" height="400">
+            <figcaption style="text-align: center;">Salah Satu Taman Bunga di Blooms Garden</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+      <br>
+      <hr>
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="about-text">
+            <figure class="figure">
+              <img src="asset/img/5.jpeg" class="figure-img img-fluid rounded" alt="..." width="600" height="400">
+              <figcaption style="text-align: center;">Bangunan Kincir Angin</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4>Babgunan-Bangunan Di Blooms Garden</h4>
+          <p class="lead">Selain taman, blooms garden juga memiliki beberapa penginapan, 
+            bangunan bojek wisata, dan beberapa spot foto yang bagus untuk 
+            dikunjung dan ada juga labirin tanam di sana, selain itu juga ada tempat 
+            makan yang memiliki tampilan yang bagus dan menarik untuk dilihat, dan 
+            juga kebersihan di blooms garden sangat terjamin.</p>
+            <p>Selain taman, blooms garden juga memiliki beberapa penginapan, 
+              bangunan bojek wisata, dan beberapa spot foto yang bagus untuk 
+              dikunjung dan ada juga labirin tanam di sana, selain itu juga ada tempat 
+              makan yang memiliki tampilan yang bagus dan menarik untuk dilihat, dan 
+              juga kebersihan di blooms garden sangat terjamin.</p>
+              <a class="btn btn-outline-primary" href="#">Selengkapnya</a>
+              <h5>Follow Me no teh website</h5>
+              <a href="" class="btn btn-outline-primary"><img src="asset/img/facebook.svg" width="20px" height="20px"> Facebook</a>
+              <a href="" class="btn btn-outline-info"><img src="asset/img/twitter.svg" width="20px" height="20px"> Twitter</a>
+              <a href="" class="btn btn-outline-danger"> <img src="asset/img/youtube.svg" width="20px" height="20px">Youtube</a>
+        </div>
+      </div>
+      <br>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item ">
+            <a class="page-link" href="#">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+      <hr>
+    </div>
+  </div>
+        <!--End Objek wisata-->
+    <!--Sarana Akomodasi Card -->
+    <h3 align="center" id="SaranaAkomodasi" class="display-4" style="text-align: center;">Sarana Akomodasi</h3>
+    <br>
+    <div align="center" class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="about-text">
+
+            <div class="card" style="width: 23rem;">
+              <img src="asset/img/14.jpeg" class="card-img-top" height="150" width="250">
+              <div class="card-body">
+                <h5 class="card-title">Kampung BINGO</h5>
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.289802234223743, 115.15892366828724
+                <p class="card-text">Restoran ini sangat bagus dan memiiki menu makanan yang enak-enak dengan harga yang cukup terjangkau</p>
+                <p class="card-text"> Rp.20.000 - Rp.500.000</p>
+                <a href="#" class="btn btn-success">Lihat Harga</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+
+          <div class="card" style="width: 23rem;">
+            <img src="asset/img/16.jpg" class="card-img-top" height="150" width="250">
+            <div class="card-body">
+              <h5 class="card-title">Waroeng Munduk Luwih</h5>
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-half.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.317037266687226, 115.16327542312824
+                <p class="card-text">Restoran ini sangat bagus, pemandangan yang indah, makanan dari restoran ini enak dan juga terjangkau</p>
+                <p class="card-text"> Rp.10.000 - Rp.100.000</p>
+              <a href="#" class="btn btn-success">Lihat Harga</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          
+          <div class="card" style="width: 23rem;">
+            <img src="asset/img/15.jpg" class="card-img-top" height="150" width="250">
+            <div class="card-body">
+              <h5 class="card-title">Warung Makan Pondok Bedugul</h5>
+              <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.300162440537724, 115.16068256502273
+                <p class="card-text">Restoran ini sangat bagus, suasananya yang nyaman, dan lokasinya lebih dekat dari Blooms Gambar walah </p>
+                <p class="card-text"> Rp.20.000 - Rp.100.000</p>
+              <a href="#" class="btn btn-success">Lihat Harga</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <!--End Sarana Akomodasi Card -->
+    <!-- Progresbar  -->
+    <div class="container-fluid" style="background-color: #f3f4f5;">
+    <p class="display-4" style="text-align: center;" id="Kunjungan">Kunjungan Wisata</p>
+    <div class="progress">
+      <label class="h6">Eropa : </label>
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" 
+      aria-valuenow="36" aria-valuemin="0" aria-valuemax="100" style="width: 36%">36%</div>
+    </div>
+    <br>
+    <div class="progress">
+      <label class="h6">Cina : </label>
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" 
+      aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+    </div>
+    <br>
+    <div class="progress">
+      <label class="h6">Jepang : </label>
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" 
+      aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+    </div>
+    <br>
+    <div class="progress">
+      <label class="h6">Korea : </label>
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" 
+      aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">65%</div>
+    </div>
+    <hr>
+  </div>
+    <!-- End Progresbar  -->
+    <!-- Galleri Wisatawan -->
+    <h3 align="center" id="SaranaAkomodasi" class="display-4" style="text-align: center;">Galleri Wisatawan</h3>
+      <div class="row" id="Gesergambar">
+        <div class="col-md-3">
+          <figure class="figure">
+            <img src="asset/img/A.jfif" class="figure-img img-fluid rounded" alt="..." width="350" height="200">
+            <figcaption style="text-align: center;">Salah Satu Taman Bunga </figcaption>
+          </figure>
+        </div>
+        <div class="col-md-3">
+          <figure class="figure">
+            <img src="asset/img/A3.jfif" class="figure-img img-fluid rounded" alt="..." width="500" height="200">
+            <figcaption style="text-align: center;"> Taman Bunga Kincir Angin</figcaption>
+          </figure>
+        </div>
+        <div class="col-md-3">
+          <figure class="figure">
+            <img src="asset/img/A1.jfif" class="figure-img img-fluid rounded" alt="..." width="350" height="200">
+            <figcaption style="text-align: center;">Taman Dewi </figcaption>
+          </figure>
+        </div>
+        <div class="col-md-3">
+          <figure class="figure">
+            <img src="asset/img/A2.jfif" class="figure-img img-fluid rounded" alt="..." width="350" height="200">
+            <figcaption style="text-align: center;">Taman Bunga Merak </figcaption>
+          </figure>
+        </div>
+      </div>
+      
+      <div class="row" id="Gesergambar1">
+        <div class="col-md-3">
+          <figure class="figure">
+            <img src="asset/img/6.jpg" class="figure-img img-fluid rounded" alt="..." width="350" height="200">
+            <figcaption style="text-align: center;">Salah Satu Taman Bunga </figcaption>
+          </figure>
+        </div>
+        <div class="col-md-3">
+          <figure class="figure">
+            <img src="asset/img/A4.jfif" class="figure-img img-fluid rounded" alt="..." width="350" height="200">
+            <figcaption style="text-align: center;">Tambilan Depan </figcaption>
+          </figure>
+        </div>
+        <div class="col-md-3">
+          <figure class="figure">
+            <img src="asset/img/A5.jfif" class="figure-img img-fluid rounded" alt="..." width="350" height="200">
+            <figcaption style="text-align: center;"> Salah Satu Taman Bunga </figcaption>
+          </figure>
+        </div>
+        <div class="col-md-3">
+          <figure class="figure">
+            <img src="asset/img/2,1.jpg" class="figure-img img-fluid rounded" alt="..." width="350" height="200">
+            <figcaption style="text-align: center;">Salah Satu Taman Bunga </figcaption>
+          </figure>
+        </div>
+      </div>
+      <!-- End Galleri Wisatawan -->
+    <!-- Contact -->
+    <hr>
+    <div class="container-fluid" style="background-color: #cee4fa;">
+      <p class="display-4" style="text-align: center;" id="Hubungi">Hubungi Kami</p>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="lead"><strong>Google Met Locatiom Blooms Garden</strong></p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.007061518904!2d115.156584813731!3d-8.302094794027107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd189a0ee3f1fa5%3A0x86e5ba65deb4531e!2sThe%20Blooms%20Garden!5e0!3m2!1sid!2sid!4v1642761924101!5m2!1sid!2sid" 
+          width="600" height="450" style="border:0;" allowfullscreen="" 
+          loading="lazy"></iframe>
+        </div>
+        <div class="col-md-6">
+      <form class="row g-3" style="background-color: greenyellow">
+        <div class="col-md-6">
+          <label for="namadepan" class="form-label">Nama Depan</label>
+          <input type="text" class="form-control" id="namadepan">
+        </div>
+        <div class="col-md-6">
+          <label for="Namabelakang" class="form-label">Nama Belakang</label>
+          <input type="text" class="form-control" id="Namabelakang">
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="telp" class="form-label">No. Telp</label>
+          <input type="text" class="form-control" id="notelp">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Alamat</label>
+          <input type="text" class="form-control" id="inputAddress2">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Kabupaten/Kota</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Desa</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Kirim</button>
+        </div>
+      </form> 
+      </div> 
+    </div>
+    <br>
+  </div>
+    <!-- End Contact -->
+    <!--Footer-->
+    <footer class="text-white text-center" style="background-color:#222427;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <br>
+            <br>
+           <p>Copy Right @2021 Web Dseain Wahyu</p>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li><a href="#"></a>Home</li>
+              <li><a href="#objekwisata"></a>Objek Wisata</li>
+              <li><a href="#SaranaAkomodasi"></a>Sarana Akomodasi</li>
+              <li><a href="#"></a>Wawasan</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p class="lead">I Nyoman Wahyu Dea Agustinus</p>
+            <p">Seorang yang telah membuat dan mendisain webset ini</p>
+          </div>
+        </div>
+      </div>
+    </footer>        
+
+   <!--End Footer-->
+    <!--Bootstrap JS CDR-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous"></script>
+</body>
+</html>

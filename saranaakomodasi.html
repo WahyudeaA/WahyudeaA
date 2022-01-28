@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blooms Garden</title>
+
+    <link rel="shortcut icon" href="asset/img/0.ico">
+
+    <!--Bootstrap CSS CDR-->
+    <link rel="stylesheet" href="asset/css/bootstrap.css">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!-- Ling JQueri -->
+    <link rel="stylesheet" type="text/css" href="asset/css/jquery-ui.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	  <script type="text/javascript" src="asset/js/jquery-ui.js"></script>
+      <script type="text/javascript">
+        $(function(){
+          $("#dialogku").dialog({
+            autoOpen:false,
+            show:'blind',
+            hide:'explode'
+          });
+          $('#dibuka').click(function(){
+            $('#dialogku').dialog('open');
+          });
+
+          $(document).ready(function(){
+			    $("#tabs").tabs();
+	  	});
+        });
+      </script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <!--Navbar-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+              <div class="container py-2">
+                <a class="navbar-brand" href="#">
+                        <img src="asset/img/1.png" alt="" width="35" height="29" class="d-inline-block align-text-top">
+                        <span class="navbar-brand mb-0 h1">Blooms Garden</span>
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="objekwisata.html">Objek Wisata</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="saranaakomodasi.html">Sarana Akomodasi</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="wawasan.html">Wawasan</a>
+                      </li>
+                      <form class="d-flex">
+                        <input class="form-control me-3" type="search" placeholder="Pencarian" aria-label="Search">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Cari</button>
+                          <!-- Modal -->
+                           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                             <div class="modal-dialog">
+                               <div class="modal-content">
+                                 <div class="modal-header">
+                                   <h5 class="modal-title" id="exampleModalLabel">Selamat datang di Webset kami</h5>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body">
+                                   mohon maaf Kami tidak menemukan apa yang ada cari silakan ulang kembali
+                                   Terima Kasih 
+                                 </div>
+                               </div>
+                             </div>
+                         </div>
+                      </form>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+            </header>
+        <!--End Navbar-->
+        <section>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+           <div class="carousel-indicators">
+             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+           </div>
+           <div class="carousel-inner">
+             <div class="carousel-item active">
+               <img src="asset/img/2.jpg" class="gambar" alt="...">
+               <div class="carousel-caption d-none d-md-block">
+                 <h1 class="display-4">Restoran Blooms Garden</h1>
+                 <h6>Restoran ini berada di dalam Blooms Garden, restoran ini menjual beberapa jenis makanan yang enak untuk dinikmati oleh
+                     raea pengunjung.</h6>
+                     <button type="button" class="btn btn-success btn-lg">Jelajah</button>
+                     <button type="button" class="btn btn-warning btn-lg" id="dibuka">Video</button>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <img src="asset/img/2,1.jpg" class="gambar" alt="...">
+               <div class="carousel-caption d-none d-md-block">
+                 <h1 class="display-4">Taman Bunga</h1>
+                 <h6>Taman bunga ini merupakan daya tarik utama dari pada Blooms Garden itu sendiri, 
+                     yang dimana sebagian besar Blooms Garden bersisi berbagai tanaman bunga dan tanaman ias.</h6>
+                     <button type="button" class="btn btn-success btn-lg">Jelajah</button>
+                     <button type="button" class="btn btn-warning btn-lg" id="dibuka">Video</button>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <img src="asset/img/2,2.jpg" class="gambar" alt="...">
+               <div class="carousel-caption d-none d-md-block">
+                 <h1 class="display-4">Patung Dewi Sarahsuati</h1>
+                 <h6>Patung ini terletak di bagian tengah dari pada taman Blooms Garden itu sendiri, selain itu juga di bawah 
+                     patuang ada air yang mengalir turu, dan itu semua membuat tampilan dari taman Blooms Garden ini menjadi lebih menarik lagi.</h6>
+                     <button type="button" class="btn btn-success btn-lg">Jelajah</button>
+                     <button type="button" class="btn btn-warning btn-lg" id="dibuka">Video</button>
+               </div>
+             </div>
+           </div>
+           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Previous</span>
+           </button>
+           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Next</span>
+           </button>
+         </div>
+   
+       </section>
+         <div id="dialogku">
+           <h3>Video Blooms Garden</h3>
+           <iframe width="560" height="315" 
+           src="https://www.youtube.com/embed/EkpmFHIn7yo" 
+           title="YouTube video player" frameborder="0" 
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+           allowfullscreen></iframe>
+         </div>
+       <!--End Carausel-->
+    <!--Sarana Akomodasi Card -->
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">Hotel</a></li>
+        <li><a href="#tabs-2">Restoran</a></li>
+        <li><a href="#tabs-3">Objek Wisata Lainnya</a></li>
+      </ul>
+      <div id="tabs-1">
+        <h3 align="center" id="SaranaAkomodasi" class="display-4" style="text-align: center;">Hotel</h3>
+    <br>
+    <div align="center" class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="about-text">
+
+            <div class="card" style="width: 23rem;">
+              <img src="asset/img/H.jpg" class="card-img-top" height="150" width="250">
+              <div class="card-body">
+                <h5 class="card-title">Umah Lumbung Bedugul</h5>
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.281200774960118, 115.15512546067427
+                <p class="card-text">Hotel ini sangat menar, bagus, dan suasananya sangat indah. Pelayanan yang di berikan juga sangat baik.</p>
+                <p class="card-text"> Rp.380.000 Permalam</p>
+                <a href="#" class="btn btn-success">Lihat Harga</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+
+          <div class="card" style="width: 23rem;">
+            <img src="asset/img/H1.jpg" class="card-img-top" height="150" width="250">
+            <div class="card-body">
+              <h5 class="card-title">Oak Tree Bali</h5>
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-half.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.240628881980635, 115.14579919890687
+                <p class="card-text">Hotel ini memiliki pemanadangan yang cukup indah dan pelayanan yang di berikan juga cukup baik.</p>
+                <p class="card-text"> Rp.158.400 Permalam</p>
+              <a href="#" class="btn btn-success">Lihat Harga</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          
+          <div class="card" style="width: 23rem;">
+            <img src="asset/img/H2.jpg" class="card-img-top" height="150" width="250">
+            <div class="card-body">
+              <h5 class="card-title">CLV Hotel & Villa</h5>
+              <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-half.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.269847391353602, 115.16187231480822
+                <p class="card-text">Restoran ini sangat bagus, suasananya yang nyaman, dan lokasinya lebih dekat dari Blooms Gambar walah </p>
+                <p class="card-text"> Rp.342.630 Permalam</p>
+              <a href="#" class="btn btn-success">Lihat Harga</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        
+        <div class="col-md-4">
+          
+          <div class="card" style="width: 23rem;">
+            <img src="asset/img/H2.jpg" class="card-img-top" height="150" width="250">
+            <div class="card-body">
+              <h5 class="card-title">CLV Hotel & Villa</h5>
+              <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-half.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.269847391353602, 115.16187231480822
+                <p class="card-text">Restoran ini sangat bagus, suasananya yang nyaman, dan lokasinya lebih dekat dari Blooms Gambar walah </p>
+                <p class="card-text"> Rp.342.630 Permalam</p>
+              <a href="#" class="btn btn-success">Lihat Harga</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+
+          <div class="card" style="width: 23rem;">
+            <img src="asset/img/H1.jpg" class="card-img-top" height="150" width="250">
+            <div class="card-body">
+              <h5 class="card-title">Oak Tree Bali</h5>
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-half.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.240628881980635, 115.14579919890687
+                <p class="card-text">Hotel ini memiliki pemanadangan yang cukup indah dan pelayanan yang di berikan juga cukup baik.</p>
+                <p class="card-text"> Rp.158.400 Permalam</p>
+              <a href="#" class="btn btn-success">Lihat Harga</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="about-text">
+
+            <div class="card" style="width: 23rem;">
+              <img src="asset/img/H.jpg" class="card-img-top" height="150" width="250">
+              <div class="card-body">
+                <h5 class="card-title">Umah Lumbung Bedugul</h5>
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.281200774960118, 115.15512546067427
+                <p class="card-text">Hotel ini sangat menar, bagus, dan suasananya sangat indah. Pelayanan yang di berikan juga sangat baik.</p>
+                <p class="card-text"> Rp.380.000 Permalam</p>
+                <a href="#" class="btn btn-success">Lihat Harga</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+      </div>
+
+      <div id="tabs-2">
+        <h3 align="center" id="SaranaAkomodasi" class="display-4" style="text-align: center;">Restoran</h3>
+    <br>
+    <div align="center" class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="about-text">
+
+            <div class="card" style="width: 23rem;">
+              <img src="asset/img/14.jpeg" class="card-img-top" height="150" width="250">
+              <div class="card-body">
+                <h5 class="card-title">Kampung BINGO</h5>
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.289802234223743, 115.15892366828724
+                <p class="card-text">Restoran ini sangat bagus dan memiiki menu makanan yang enak-enak dengan harga yang cukup terjangkau</p>
+                <p class="card-text"> Rp.20.000 - Rp.500.000</p>
+                <a href="#" class="btn btn-success">Lihat Harga</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+
+          <div class="card" style="width: 23rem;">
+            <img src="asset/img/16.jpg" class="card-img-top" height="150" width="250">
+            <div class="card-body">
+              <h5 class="card-title">Waroeng Munduk Luwih</h5>
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-half.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.317037266687226, 115.16327542312824
+                <p class="card-text">Restoran ini sangat bagus, pemandangan yang indah, makanan dari restoran ini enak dan juga terjangkau</p>
+                <p class="card-text"> Rp.10.000 - Rp.100.000</p>
+              <a href="#" class="btn btn-success">Lihat Harga</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          
+          <div class="card" style="width: 23rem;">
+            <img src="asset/img/15.jpg" class="card-img-top" height="150" width="250">
+            <div class="card-body">
+              <h5 class="card-title">Warung Makan Pondok Bedugul</h5>
+              <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.300162440537724, 115.16068256502273
+                <p class="card-text">Restoran ini sangat bagus, suasananya yang nyaman, dan lokasinya lebih dekat dari Blooms Gambar walah </p>
+                <p class="card-text"> Rp.20.000 - Rp.100.000</p>
+              <a href="#" class="btn btn-success">Lihat Harga</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          
+          <div class="card" style="width: 23rem;">
+            <img src="asset/img/15.jpg" class="card-img-top" height="150" width="250">
+            <div class="card-body">
+              <h5 class="card-title">Warung Makan Pondok Bedugul</h5>
+              <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.300162440537724, 115.16068256502273
+                <p class="card-text">Restoran ini sangat bagus, suasananya yang nyaman, dan lokasinya lebih dekat dari Blooms Gambar walah </p>
+                <p class="card-text"> Rp.20.000 - Rp.100.000</p>
+              <a href="#" class="btn btn-success">Lihat Harga</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+
+          <div class="card" style="width: 23rem;">
+            <img src="asset/img/16.jpg" class="card-img-top" height="150" width="250">
+            <div class="card-body">
+              <h5 class="card-title">Waroeng Munduk Luwih</h5>
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-half.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.317037266687226, 115.16327542312824
+                <p class="card-text">Restoran ini sangat bagus, pemandangan yang indah, makanan dari restoran ini enak dan juga terjangkau</p>
+                <p class="card-text"> Rp.10.000 - Rp.100.000</p>
+              <a href="#" class="btn btn-success">Lihat Harga</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="about-text">
+
+            <div class="card" style="width: 23rem;">
+              <img src="asset/img/14.jpeg" class="card-img-top" height="150" width="250">
+              <div class="card-body">
+                <h5 class="card-title">Kampung BINGO</h5>
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.289802234223743, 115.15892366828724
+                <p class="card-text">Restoran ini sangat bagus dan memiiki menu makanan yang enak-enak dengan harga yang cukup terjangkau</p>
+                <p class="card-text"> Rp.20.000 - Rp.500.000</p>
+                <a href="#" class="btn btn-success">Lihat Harga</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+      </div>
+
+      <div id="tabs-3">
+        <h3 align="center" id="SaranaAkomodasi" class="display-4" style="text-align: center;">Objek Wisata Lainnya</h3>
+    <br>
+    <div align="center" class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="about-text">
+
+            <div class="card" style="width: 23rem;">
+              <img src="asset/img/O.png" class="card-img-top" height="150" width="250">
+              <div class="card-body">
+                <h5 class="card-title">Kebun Raya Bali</h5>
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-half.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.275898534791793, 115.1542243538211
+                <p class="card-text">Tempat ini sangat bagus dan juga indah dangan menajikan suasana alaam yang luar biasa</p>
+                <p class="card-text"> Rp.20.000 - Rp.170.000</p>
+                <a href="#" class="btn btn-success">Lihat Harga</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4">
+
+          <div class="card" style="width: 23rem;">
+            <img src="asset/img/O1.jpg" class="card-img-top" height="150" width="250">
+            <div class="card-body">
+              <h5 class="card-title">Kebun Raya Bali</h5>
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-half.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.281239254772462, 115.1564377961502
+                <p class="card-text">Tempat wisata ini sangat bagus dengan menajikan suasana alam sanga indah dan bersih</p>
+                <p class="card-text"> Rp.10.000 - Rp.100.000</p>
+              <a href="#" class="btn btn-success">Lihat Harga</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          
+          <div class="card" style="width: 23rem;">
+            <img src="asset/img/O2.jpg" class="card-img-top" height="150" width="250">
+            <div class="card-body">
+              <h5 class="card-title">Taman Bunga Matahari</h5>
+              <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.500624019690552, 115.16924989800022
+                <p class="card-text">Tempat wisata ini sangat bagus dengan menajikan pemandangan Taman bunga yang indah.</p>
+                <p class="card-text"> Rp.20.000 - Rp.120.000</p>
+              <a href="#" class="btn btn-success">Lihat Harga</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          
+          <div class="card" style="width: 23rem;">
+            <img src="asset/img/O2.jpg" class="card-img-top" height="150" width="250">
+            <div class="card-body">
+              <h5 class="card-title">Taman Bunga Matahari</h5>
+              <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.500624019690552, 115.16924989800022
+                <p class="card-text">Tempat wisata ini sangat bagus dengan menajikan pemandangan Taman bunga yang indah.</p>
+                <p class="card-text"> Rp.20.000 - Rp.120.000</p>
+              <a href="#" class="btn btn-success">Lihat Harga</a>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="col-md-4">
+
+          <div class="card" style="width: 23rem;">
+            <img src="asset/img/O1.jpg" class="card-img-top" height="150" width="250">
+            <div class="card-body">
+              <h5 class="card-title">Kebun Raya Bali</h5>
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-half.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.281239254772462, 115.1564377961502
+                <p class="card-text">Tempat wisata ini sangat bagus dengan menajikan suasana alam sanga indah dan bersih</p>
+                <p class="card-text"> Rp.10.000 - Rp.100.000</p>
+              <a href="#" class="btn btn-success">Lihat Harga</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+          <div class="about-text">
+
+            <div class="card" style="width: 23rem;">
+              <img src="asset/img/O.png" class="card-img-top" height="150" width="250">
+              <div class="card-body">
+                <h5 class="card-title">Kebun Raya Bali</h5>
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-fill.svg" alt="" height="30px" width="30px">
+                <img src="asset/img/star-half.svg" alt="" height="30px" width="30px">
+                <br>
+                <br>
+                <img src="asset/img/geo-alt-fill.svg" width="20px" height="20px">-8.275898534791793, 115.1542243538211
+                <p class="card-text">Tempat ini sangat bagus dan juga indah dangan menajikan suasana alaam yang luar biasa</p>
+                <p class="card-text"> Rp.20.000 - Rp.170.000</p>
+                <a href="#" class="btn btn-success">Lihat Harga</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+      </div>
+    </div>
+    
+    <!--End Sarana Akomodasi Card -->
+    <!--Footer-->
+    <footer class="text-white text-center" style="background-color:#222427;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <br>
+            <br>
+           <p>Copy Right @2021 Web Dseain Wahyu</p>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li><a href="#"></a>Home</li>
+              <li><a href="#objekwisata"></a>Objek Wisata</li>
+              <li><a href="#SaranaAkomodasi"></a>Sarana Akomodasi</li>
+              <li><a href="#"></a>Wawasan</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <p class="lead">I Nyoman Wahyu Dea Agustinus</p>
+            <p">Seorang yang telah membuat dan mendisain webset ini</p>
+          </div>
+        </div>
+      </div>
+    </footer>        
+
+   <!--End Footer-->
+    <!--Bootstrap JS CDR-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
